@@ -30,7 +30,7 @@ $password = "root";
 $dbname = "database";
 
 /* Spider Start Table */
-$sdbname = "table";
+$sdbname = "searchesuser";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 $connTemp = $conn;
