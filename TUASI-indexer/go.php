@@ -32,7 +32,7 @@ include('config.php');
 if ($connTemp->connect_error) {
 	die("Connection failed: " . $connTemp->connect_error);
 	}
-$resultsTemp = mysqli_query($connTemp, "SELECT url FROM searches ORDER BY RAND() LIMIT 1") or die(mysqli_error($connTemp));
+$resultsTemp = mysqli_query($connTemp, "SELECT url FROM $sdbname ORDER BY RAND() LIMIT 1") or die(mysqli_error($connTemp));
 if(!empty(mysqli_fetch_array( $resultsTemp ))){
 	foreach($resultsTemp as $resTemp){
 		$thisTime = $resTemp['url'];
