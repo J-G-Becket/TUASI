@@ -20,11 +20,11 @@ The TUASI project is free and opensource, created in my spare time and licensed 
 
 CONFIGURATION:
 
-- Execute the two SQL files in the database folder, create the two tables required.
+- Execute the two SQL files in the database folder; create the two tables required.
 - Edit config.php in the htdocs folder with your database and site information.
-- Edit config.php in the indexer folder with your database information.
+- Edit config.php in the indexer folder with your database information; choose which database to crawl from.
 - Edit TUASI-Spider.bat with the correct php.exe and go.php locations.
 - Upload htdocs folder to your webserver.
 - Upload indexer folder to your server, but outside of your htdocs or www folder.
-- By default, the spider will start with Mozilla's top 500 websites URL - edit this to change starting point.
+- By default, if the spider is set to start from the Crawler Added database, it will start with Mozilla's top 500 websites URL - edit this in the 'searches' database to change its starting point.
 - Run TUASI-Spider.bat to launch a spider instance.
