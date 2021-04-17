@@ -11,7 +11,7 @@ The 'Crawler Added' database, contains only results added automatically by the s
 
 Rating any URL up or down, influences its ranking in search results matching queries.
 
-The spider selects a random URL from the 'Crawler Added' database, crawls it looking for any other URLs on the page, then proceeds to crawl and index any found URLs for up to 5 minutes, then resets itself and repeats.
+The spider selects a random URL from either the 'Crawler Added', or 'User Added' database, crawls it looking for any other URLs on the page, then proceeds to crawl and index any found URLs for up to 5 minutes, then resets itself and repeats.
 
 Multiple spider instances can be ran at once, beta testing ran 20 consecutively before socket issues.
 
