@@ -17,3 +17,14 @@ Multiple spider instances can be ran at once, beta testing ran 20 consecutively 
 
 
 The TUASI project is free and opensource, created in my spare time and licensed under the MIT License. If you would like to support my work, or make a donation to me for my efforts, please get in touch with me directly - staff@tuasi.com
+
+CONFIGURATION:
+
+- Execute the two SQL files in the database folder, create the two tables required.
+- Edit config.php in the htdocs folder with your database and site information.
+- Edit config.php in the indexer folder with your database information.
+- Edit TUASI-Spider.bat with the correct php.exe and go.php locations.
+- Upload htdocs folder to your webserver.
+- Upload indexer folder to your server, but outside of your htdocs or www folder.
+- By default, the spider will start with Mozilla's top 500 websites URL - edit this to change starting point.
+- Run TUASI-Spider.bat to launch a spider instance.
