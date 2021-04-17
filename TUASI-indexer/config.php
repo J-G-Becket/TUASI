@@ -29,8 +29,8 @@ $password = "root";
 /* Database Name */
 $dbname = "database";
 
-/* Spider Start Database */
-$sdbname = "database";
+/* Spider Start Table */
+$sdbname = "table";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 $connTemp = $conn;
