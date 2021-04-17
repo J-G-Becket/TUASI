@@ -1,0 +1,235 @@
+input[type=text],textarea {
+outline: none;
+background-color: #001F00;
+color: #d5d5d7;
+border: 2px solid #4b595f;
+}
+input[type=url] {
+background-color: #001F00;
+color: #d5d5d7;
+border: 2px solid #4b595f;
+}
+input[type=submit] {
+background-color: #001F00;
+color: #d5d5d7;
+border: 2px solid #4b595f;
+}
+textarea:focus, input:focus, input:-autofill{
+outline: none;
+background-color: #001F00;
+color: #d5d5d7;
+border: 2px solid #4b595f;
+}
+@font-face {
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+@font-face {
+font-family:"Comic Sans MS", cursive, sans-serif;
+}
+html {
+background-image: linear-gradient(#66747b, #293134);
+height: 97%;
+background-size:     cover;
+background-attachment: fixed;
+background-repeat:   no-repeat;
+background-position: center center;
+overflow-wrap: break-word;
+overflow: hidden;
+}
+* {
+margin: 0;
+padding: 0;
+}
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, sidebar_container3 section {
+display:block;
+}
+body {
+color: #d5d5d7;
+background:transparent;
+}
+p {
+font: italic 18px Roboto,arial,sans-serif;
+padding: 0.6% 0.6% 0.6% 0.6%;
+line-height: 1.6em;
+}
+img {
+border: 0;
+}
+h1 {
+padding: 0.6% 0.6% 0.6% 0.6%;
+color: #f6ebff;
+font: bold 250% arial, sans-serif;
+}
+h2 {
+padding: 0.6% 0.6% 0.6% 0.6%;
+color: #f6ebff;
+font: bold 250% arial, sans-serif;
+}
+h3 {
+color: #f6ebff;
+font: bold 100% arial, sans-serif;
+}
+h4 {
+padding: 0.6% 0.6% 0.6% 0.6%;
+color: #000;
+font: bold 120% arial, sans-serif;
+}
+em {
+color: #14171a;
+}
+.left {
+float: left;
+width: auto;
+margin-right: 10px;
+}
+.right {
+float: right;
+width: auto;
+margin-left: 10px;
+}
+.center {
+display: block;
+text-align: center;
+margin: 20px auto;
+}
+.dockit {
+animation-name: wobble;
+animation-timing-function: ease-in;
+animation-timing-function: fade-in;
+animation-duration: 0.6s;
+animation-iteration-count: 1;
+}
+table {
+margin: 0.1% 0.1% 0.1% 0.1%;
+width: 90%;
+border: transparent;
+align: center;
+}
+table tr th, table tr td {
+background-image: linear-gradient(#66747b, #293134);
+color: #d5d5d7;
+padding: 9px 9px;
+text-align: left;
+border: 1px solid #4b595f;
+-webkit-border-radius: 3px 3px 3px 3px; -moz-border-radius: 3px 3px 3px 3px; border-radius: 3px 3px 3px 3px;
+box-shadow: 1px 1px 2px #4b595f, -1px -1px 2px #4b595f, 1px 1px 2px #4b595f;
+}
+table tr td {
+background-color: #66747b;
+color: #d5d5d7;
+}
+.table-results {
+width:99%;
+}
+.atable {
+margin: 0.1% 0.1% 0.1% 0.1%;
+border: transparent;
+align: center;
+}
+.atable tr th td {
+background-image: linear-gradient(#66747b, #293134);
+color: #d5d5d7;
+padding: 9px 9px;
+text-align: left;
+border: 1px solid #4b595f;
+-webkit-border-radius: 3px 3px 3px 3px; -moz-border-radius: 3px 3px 3px 3px; border-radius: 3px 3px 3px 3px;
+box-shadow: 1px 1px 2px #4b595f, -1px -1px 2px #4b595f, 1px 1px 2px #4b595f;
+}
+::-webkit-scrollbar
+{
+width: 15px;  /* for vertical scrollbars */
+height: 0px; /* for horizontal scrollbars */
+background-color: transparent;
+}
+::-webkit-scrollbar-track
+{
+background-color: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+background-color: #f6ebff;
+opacity: 0.5;
+border: 2px solid #4b595f;
+-webkit-border-radius: 12px 12px 12px 12px;
+-moz-border-radius: 12px 12px 12px 12px;
+border-radius: 12px 12px 12px 12px;
+}
+::-webkit-scrollbar-button {
+background-color: #f6ebff;
+background-size: 100%;
+height: 20px;
+width: 15px;
+-webkit-box-shadow: inset 1px 1px 1px #f6ebff;
+opacity: 0.5;
+border: 2px solid #4b595f;
+-webkit-border-radius: 12px 12px 12px 12px;
+-moz-border-radius: 12px 12px 12px 12px;
+border-radius: 12px 12px 12px 12px;
+}
+::-webkit-scrollbar-button:hover {
+-webkit-box-shadow: inset 3px 3px 3px #4b595f;
+opacity: 1.0;
+}
+div {
+animation-name: fadeIn;
+animation-timing-function: ease-in;
+animation-timing-function: fade-in;
+animation-duration: 0.3s;
+animation-iteration-count: 1;
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; }
+}
+a, hover {
+font: italic 100% arial, sans-serif;
+text-decoration: none;
+outline: none;
+color: #d5d5d7;
+}
+a:hover {
+color: #f6ebff;
+}
+.scroller {
+overflow-x: scroll;
+height: 95%;
+scrollbar-color: dark;
+}
+.scroller::-webkit-scrollbar
+{
+width: 10px;  /* for vertical scrollbars */
+height: 0px; /* for horizontal scrollbars */
+background-color: transparent;
+}
+.scroller::-webkit-scrollbar-track
+{
+background-color: transparent;
+}
+.scroller::-webkit-scrollbar-thumb
+{
+background-color: #f6ebff;
+opacity: 0.5;
+border: 2px solid #08200e;
+-webkit-border-radius: 12px 12px 12px 12px;
+-moz-border-radius: 12px 12px 12px 12px;
+border-radius: 12px 12px 12px 12px;
+}
+.scroller::-webkit-scrollbar-button {
+background-color: #f6ebff;
+background-size: 100%;
+height: 20px;
+width: 10px;
+-webkit-box-shadow: inset 1px 1px 1px #f6ebff;
+opacity: 0.5;
+border: 2px solid #08200e;
+-webkit-border-radius: 12px 12px 12px 12px;
+-moz-border-radius: 12px 12px 12px 12px;
+border-radius: 12px 12px 12px 12px;
+}
+.scroller::-webkit-scrollbar-button:hover {
+-webkit-box-shadow: inset 3px 3px 3px #08200e;
+opacity: 1.0;
+}
+.scroller1 {
+overflow-x: scroll;
+height: 85%;
+}
