@@ -15,6 +15,7 @@
  * @updated    17/04/2021
  */
 
+session_start();
 include('config.php');
 echo "<html style='height:100vh; width:100vw; margin:0;'><head>";
 echo '<title>'.$siteNamed.'</title>';
