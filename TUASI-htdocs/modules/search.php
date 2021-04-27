@@ -64,15 +64,15 @@ if (!isset($skipSearch)){
 			}
 		else if ($newSearchType == "4"){
 			$titleString = "URL Specific Results";
-			$resultQuery = mysqli_query($connTemp, "SELECT * FROM searches WHERE url LIKE '%$newQuery%' ORDER BY (rateup - ratedown) DESC, (ratedown + rateup) ASC, timeurl DESC LIMIT 500") or die(mysqli_error($connTemp));
+			$resultQuery = mysqli_query($connTemp, "SELECT * FROM searches WHERE url LIKE '%$newQuery%' ORDER BY timeurl DESC LIMIT 500") or die(mysqli_error($connTemp));
 			}
 		else if ($newSearchType == "5"){
 			$titleString = "Title Specific Results";
-			$resultQuery = mysqli_query($connTemp, "SELECT * FROM searches WHERE title LIKE '%$newQuery%' ORDER BY (rateup - ratedown) DESC, (ratedown + rateup) ASC, timeurl DESC LIMIT 500") or die(mysqli_error($connTemp));
+			$resultQuery = mysqli_query($connTemp, "SELECT * FROM searches WHERE title LIKE '%$newQuery%' ORDER BY timeurl DESC LIMIT 500") or die(mysqli_error($connTemp));
 			}
 		else if ($newSearchType == "6"){
 			$titleString = "Description Specific Results";
-			$resultQuery = mysqli_query($connTemp, "SELECT * FROM searches WHERE description LIKE '%$newQuery%' ORDER BY (rateup - ratedown) DESC, (ratedown + rateup) ASC, timeurl DESC LIMIT 500") or die(mysqli_error($connTemp));
+			$resultQuery = mysqli_query($connTemp, "SELECT * FROM searches WHERE description LIKE '%$newQuery%' ORDER BY timeurl DESC LIMIT 500") or die(mysqli_error($connTemp));
 			}
 		else {
 			echo "Error: Missing search type!";
