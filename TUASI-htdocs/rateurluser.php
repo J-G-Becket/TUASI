@@ -14,7 +14,7 @@
  * @link       https://www.tuasi.com/?opensource
  * @updated    17/04/2021
  */
-
+session_start();
 if (!empty($_POST)) {
 	$URLToRate = $_POST['new_url'];
 	include('config.php');
