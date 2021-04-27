@@ -18,6 +18,12 @@
 if (!empty($_POST)) {
 	$URLToRate = $_POST['new_url'];
 	include('config.php');
+	if ($_SESSION["fkey"] == $formkey){
+	}
+	else {
+		echo "Key mismatch!";
+		die();
+	}
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 		}
