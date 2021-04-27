@@ -29,6 +29,15 @@ $password = "root";
 /* Database Name */
 $dbname = "database";
 
+/* Forms Key (20 characters) */
+$formkey = "aaaaaaaaaabbbbbbbbbb";
+
+$fsplit1 = substr($formkey,0,10);
+$fsplit2 = substr($formkey,11,20);
+$fmid = date('Y-m-d');
+$formkey = $fsplit1.$fmid.$fsplit2;
+$formkey = sha1($formkey);
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 $connTemp = $conn;
 /* Website Configuration */
