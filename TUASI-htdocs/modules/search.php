@@ -21,6 +21,7 @@ if ($connTemp->connect_error) {
 $resultTotal = mysqli_query($connTemp, "select count(1) FROM searches");
 $rowTotal = mysqli_fetch_array($resultTotal);
 $totalRows = $rowTotal[0];
+$_SESSION["fkey"] = $formkey;
 echo '<i style="position:absolute; top:2px; left:'.$w5.'; font-size:'.$f11.';"><a href="./" title="Search the database of User Added URLs" target="_self" style="padding-right:25px;">User Added Database</a><a href="./?crawler" title="Search the database of Crawler Added URLs (Beta development)" target="_self" style="">Crawler Added Database (Beta)</a></i><br /><center><i><form action="" method="post" id="Search1" style="width:'.$w2.';">';
 echo '<a href="./" target="_self" title="Home" style="border:none; background-color: transparent; outline: none; padding-left:0px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color:#f6ebff; font-size:'.$f2.';"class="fa" id="search-confirm1"><img src="./images/tuasi-thumb.png" style="width:'.$f8.'; height;'.$f8.'; margin-bottom:'.$h4.';"></img></a>';
 echo '<input type="text" value="" name="user_search_query" id="user_search_query" style="width: '.$w4.'; border: 1px solid #f6ebff; background-color: transparent; outline: none; padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px; color:#f6ebff; font-size:'.$f2.';" class="fa"></input>';
